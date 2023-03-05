@@ -1,0 +1,142 @@
+body{background-image:url("../img/30.jfif");}
+     
+	  
+/*display:table;
+بالتالي هذا السيكشن يتسع فقط لمحتواه أي يكون ديناميكي*/
+
+section{  border:2px dotted #B22222;
+          padding:10px;
+		  border-radius:5px;
+		  display:table;
+		  margin:0 auto;
+		  }
+
+div{border:1px solid ;}
+/* يفضل حطا مع الديف افضل و احسن مشان ما يصير تداخل العنصر بيتناسب مع المنطقة المحددة*/
+.nava{padding:15px 0px;
+      border-bottom:1px dotted #ffffff;
+	  overflow:hidden;}
+/*	 اي قائمة موجودة بعنصر بيحمل هاد الكلاس تطبق عليه*/
+.nava ul {list-style-type:none;
+          padding:0;
+		  margin:0;
+		  }
+.nava ul li {float:right;
+            }		 
+.nava ul li a{text-decoration:none;
+              padding:6px;
+			  color:#ffffff;
+			  font-weight:bold;
+			   transition:all.10s;
+			  }
+.nava ul li a:hover{color:red;
+                   text-decoration:underline overline;
+				    }		
+
+.nava input {float:left;
+}
+
+form{background-image:url('../img/z.jfif');
+     font:bold italic 40px ;
+	 color:#ffffff;
+	  }
+
+	 
+.box{height:250px;
+      width:180px;
+	  float:left;
+	  padding:2px;
+	  margin-left:4px;
+	  border-color: #A9A9A9;
+	  
+	  }
+
+.info{height:20%;}
+
+.imge{height:80%;
+overflow:hidden;}
+
+.row{
+     padding-left:4px;
+}	  
+/* ماعمل تغيير ع عنصر كبرو بدي الانتقال بين الحالات انو يكبر و يرجع طبيعتو 0.1ثانية
+حدد انو التحجيمall  فيني بدل 
+ إضافة انتقالات سلسة بين الحالات المختلفة للعنصر عندما يخضع لتغيير
+ هذا يعني أنه عندما تتغير خاصية للعنصر ، مثل عرضه أو لونه ، سيتم تحريك التغيير خلال فترة 0.10 ثانية ، مما يعطي تأثير انتقال سلس وتدريجي.
+ */
+.imge img{height:100%;
+          width:100%;
+		transition:all.10s;   }	  
+/*يؤثر هذا التحويل على كل من ارتفاع وعرض العنصر ، لكنه لا يؤثر على تخطيط العناصر المحيطة.
+
+
+سيؤدي هذا إلى تكبير العنصر بفئة "عنصر" بنسبة 40٪ من حجمه الأصلي. التأثير هو أن العنصر سيكون أكبر بصريًا ، لكن موضعه وتخطيطه داخل صفحة الويب سيبقى كما هو.*/
+.imge img:hover{transform:scale(1.4);} 
+
+	
+	  
+	  
+	  .box1{ 
+	  height:300px;
+      width:500px;
+	  float:left;
+	  padding:2px;
+	  margin-left:4px;
+	  border-color: #A9A9A9;
+	  
+	   
+	  }
+	  
+	  
+.videoo{height:100%;
+}
+.videoo video{height:100%;
+          width:100%;}		
+.videoo 	p{font: italic normal 25px arial, sans-serif; 
+	  color:#FFB6C1;
+	  text-align: justify;
+background-color: black;	  }
+/*لما بدي محاذاة ع سوية بعض+يمين: اليمين بيجي من اتجااااااه الصفحة*/
+/*الخروج بمقدار مجلد واحد من المجلد الحالي*/
+  .box2{ 
+	  height:550px;
+      width:1000px;
+	  background-image: url("../img1/b1.jpg");
+	   background-size:cover;
+	   background-repeat: no-repeat;
+	  float:left;
+	  padding:2px;
+	  margin-left:4px;
+	  border-color: #A9A9A9;
+	   
+	  }
+
+
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 50%;
+  font-weight:bold;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /*يتم استخدام البادئة -webkit-
+  لتحديد وجوب تطبيق هذه الخاصية بشكل خاص على متصفحات الويب التي تستخدم محرك عرض 
+  WebKit (مثل Safari و Chrome).*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  /*يمكنك التحكم في المدة التي يستغرقها عرض التغييرات بالكامل.
+  يعني أن أي تأثير انتقال مطبق على العنصر سيستغرق 0.4 ثانية ليكتمل.*/
+  transition-duration: 0.4s;
+  
+    
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+  font-weight:bold;
+}
